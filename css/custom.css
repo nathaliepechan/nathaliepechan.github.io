@@ -1,23 +1,104 @@
-#menu li {
+#header {
+  padding-bottom: 2.1em;
+}
+
+#header li {
   list-style: none;
 }
 
-#menu li a {
+#header li u {
+  list-style: none;
+  font-size: 1.125em;
+}
+
+#header li a {
   color: black;
+  font-size: 1.125em;
+
 }
 
-#menu ul {
-  padding-left: 0px;
+#header ul {
+   padding-left: 1.8em;
+   padding-bottom: 2em;
+
+}
+#header p {
+  font-size: 1.125em;
+  padding-left: 1.6em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+
+
 }
 
-#me {
-  margin-top: 6em;
+#header h1 {
+  font-size: 1.438em;
+  margin-left: 1.2em;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-#content {
-  margin-top: 4em;
+#header h2 {
+  font-size: 1.438em;
+  margin-left: 1.2em;
+  margin-top: 0;
+  margin-bottom: 2em;
+
 }
-/* blendet scrolleiste aus */
-body {
-  overflow-x: hidden;
+
+
+#mail a {
+  color: black;
+
 }
+
+
+#mail p {
+  padding-left: 0.7em;
+  padding-top: 0em;
+
+}
+
+#impressum p {
+  font-size: 0.938em;
+  padding-top: 13em;
+  padding-left: 2.4em;
+
+}
+
+#impressum a {
+  color: black;
+
+}
+
+.portfolio-item {
+  margin-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.container-fixed {
+  margin-top: 2em;
+  padding-right: 3em;
+}
+
+/* Wenn mouseover über ein img, dann erscheint eine transparente Fläche über dem img. Ermöglicht eine leichtere Orientierung. */
+.projects a:hover img {
+  opacity: 0.3; transition: opacity 1s;
+  }
+
+  /* Ab einer screen Breite von 540px werden img, gelistet unter .projects, mit der maximalen Breite abgebildet. Der Rand rechts fällt weg. Somit sind die img bei der Ansicht auf dem Smartphone links und rechts ohne Rand zu betrachten.  */
+@media only screen and (max-width: 540px) {
+  .projects {
+    width: 100%;
+    }
+  .container-fixed {
+    padding-right: 0em;
+    }
+  }
+/* Der Hintergrund der Seite wird farbig hinterlegt (hell grau), wenn der screen kleiner als 540px breit ist (Smartphone) */
+@media only screen and (max-width: 500px) {
+    body {
+  background-color: lightgrey;
+    }
